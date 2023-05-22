@@ -1,6 +1,6 @@
 
 body{text-align: center;
-    font-weight: 400;
+    font-weight: 500;
 }
     table{
     margin: auto;
@@ -15,5 +15,8 @@ table, td, th{
 
 }
 tbody{
-    font-family: 'Nunito', sans-serif}
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+    
 
