@@ -14,7 +14,7 @@ body {
 
 .flex-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   padding: 8px 32px;
   /* gap: 180px; */
   justify-content: space-around;
