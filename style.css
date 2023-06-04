@@ -1,22 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
 
-body{text-align: center;
-    font-weight: 500;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-    table{
-    margin: auto;
-    width: 25%;
+body {
+  font-family: "Halant", serif;
+  font-family: "Manrope", sans-serif;
+  /* flex-wrap: wrap; */
+  /* margin: 2% 3%; */
 }
-table, td, th{
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 1%, 1%;
-    /* padding-left: 1%; */
-    text-align: left;
 
+.flex-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 32px;
+  /* gap: 180px; */
+  justify-content: space-around;
+  border: 2px solid #155eef;
+  border-radius: 8px;
+  margin: 2% 3%;
+  flex-wrap: wrap;
+  flex-basis: 400px;
 }
-tbody{
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-}
-    
 
+
+
+.container {
+  background-color: #f9fbff;
+  display: flex;
+  margin: 0.5% 3%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 32px;
+  gap: 100px;
+  border: 2px solid #155eef;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.stew {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30%;
+  /* padding: 10%; */
+  font-family: "Halant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration:none;
+  color: #041330;
+}
+
+
+.bu {
+  padding: 0.5% 0.5%;
+  gap: 10px;
+  border: 1px solid #155eef;
+  border-radius: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #155eef;
+  background-color: white;
+  cursor: pointer;
+}
+
+.guy {
+  font-family: Halant;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.sam {
+  font-family: "Halant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  color: #155eef;
+}
+
+.you {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #2e3a53;
+  flex-grow: 1;
+}
+
+.but {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  background: #155eef;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 30%;
+  padding: 2% 2.5%;
+  cursor: pointer;
+}
+.about {
+  display: flex;
+  margin: 3% 3%;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 32px;
+  gap: 100px;
+  border: 2px solid #155eef;
+  border-radius: 8px;
+}
+
+.gone {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  flex-grow: 1;
+  color: #2e3a53;
+}
+
+.see {
+  font-family: "Halant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: #041330;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #155eef;
+  border-radius: 8px;
+  margin: 3% 3%;
+  align-items: center;
+  padding: 0.5%;
+  padding: 8px 32px;
+}
+
+.logos {
+  display: flex;
+  padding: 2%;
+  gap: 60%;
+}
+
+.reed {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #041330;
+  float: right;
+  padding-right: 0.5%;
+}
