@@ -8,16 +8,15 @@
 body {
   font-family: "Halant", serif;
   font-family: "Manrope", sans-serif;
-  /* flex-wrap: wrap; */
-  /* margin: 2% 3%; */
+  
 }
 
 .flex-container {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   padding: 8px 32px;
-  /* gap: 180px; */
-  justify-content: space-around;
+
+  justify-content: space-between;
   border: 2px solid #155eef;
   border-radius: 8px;
   margin: 2% 3%;
@@ -34,7 +33,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 64px 32px;
-  gap: 100px;
   border: 2px solid #155eef;
   border-radius: 8px;
   flex-wrap: wrap;
@@ -45,21 +43,35 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 30%;
+  gap: 6rem;
   /* padding: 10%; */
   font-family: "Halant";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
-  text-decoration:none;
+  
   color: #041330;
 }
 
+a{
+  text-decoration: none;
+}
+.mine{
+  width: 55%;
+}
+.container > img{
+  width: 35%;
+}
 
-.bu {
-  padding: 0.5% 0.5%;
-  gap: 10px;
+.bod{
+  width: 38%;
+}
+
+.grey{
+  /* width: 52%; */
+}
+.hire {
   border: 1px solid #155eef;
   border-radius: 8px;
   font-family: "Manrope";
@@ -67,10 +79,13 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   color: #155eef;
   background-color: white;
   cursor: pointer;
+  width: 94px;
+  height: 44px;
+  padding: 10px 16px;
 }
 
 .guy {
@@ -119,13 +134,15 @@ body {
 .about {
   display: flex;
   margin: 3% 3%;
-  width: auto;
+  
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 64px 32px;
-  gap: 100px;
+  /* gap: 8rem; */
   border: 2px solid #155eef;
   border-radius: 8px;
+  flex-wrap: wrap;
 }
 
 .gone {
@@ -133,7 +150,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 150%;
+  line-height: 36px;
   text-align: justify;
   letter-spacing: 0.5px;
   flex-grow: 1;
@@ -145,7 +162,7 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  line-height: 120%;
+  line-height: 48px;
   color: #041330;
 }
 
@@ -160,10 +177,16 @@ body {
   padding: 8px 32px;
 }
 
+
+.foot{
+  width: 30%;
+}
 .logos {
   display: flex;
   padding: 2%;
-  gap: 60%;
+  gap: 20%;
+  width: 30%;
+
 }
 
 .reed {
@@ -176,4 +199,5 @@ body {
   color: #041330;
   float: right;
   padding-right: 0.5%;
+  /* width: 30%; */
 }
