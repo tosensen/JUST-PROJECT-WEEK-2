@@ -21,7 +21,7 @@ body {
   border-radius: 8px;
   margin: 2% 3%;
   flex-wrap: wrap;
-  flex-basis: 400px;
+
 }
 
 
@@ -139,7 +139,6 @@ a{
   justify-content: space-between;
   align-items: center;
   padding: 64px 32px;
-  /* gap: 8rem; */
   border: 2px solid #155eef;
   border-radius: 8px;
   flex-wrap: wrap;
@@ -151,7 +150,7 @@ a{
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  text-align: justify;
+  /* text-align: justify; */
   letter-spacing: 0.5px;
   flex-grow: 1;
   color: #2e3a53;
@@ -173,7 +172,7 @@ a{
   border-radius: 8px;
   margin: 3% 3%;
   align-items: center;
-  padding: 0.5%;
+  /* padding: 0.5%; */
   padding: 8px 32px;
 }
 
