@@ -198,5 +198,68 @@ a{
   color: #041330;
   float: right;
   padding-right: 0.5%;
-  /* width: 30%; */
+
+}
+
+.project{
+
+   border: 2px solid #155eef;
+  border-radius: 8px;
+  margin: 3% 3%;
+  padding-bottom: 6% ;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 3%;
+
+  
+
+}
+
+.pro{
+  
+  width: 50%;
+   position: relative;
+  gap: 24px;
+  background: #F9FBFF;
+   z-index: 3;
+   
+}
+
+.poj{
+  
+   padding-top: 5%;
+  padding-bottom: 5%;
+   padding-left: 5%;
+   padding-right: 2%;
+}
+
+h3{
+   font-family: Halant;
+font-size: 40px;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+color: #041330;
+}
+
+h5{
+  font-family: Manrope;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #2E3A53;
+
+}
+.boy{
+  width: 50%;
+  position: absolute;
+  right: 3%;
+  top: 192%;
+
+
+  
+
 }
