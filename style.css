@@ -14,12 +14,45 @@ body {
   display: flex;
   align-items: center;
   padding: 8px 32px;
-
   justify-content: space-between;
   border: 2px solid #155eef;
   border-radius: 8px;
   margin: 2% 3%;
   flex-wrap: wrap;
+}
+
+.stew {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+  font-family: "Halant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #041330;
+}
+
+.hire {
+  border: 1px solid #155eef;
+  border-radius: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #155eef;
+  background-color: white;
+  cursor: pointer;
+  width: 94px;
+  padding: 10px 16px;
+  flex-wrap: wrap;
+}
+
+.hamburger {
+  display: none;
 }
 
 .container {
@@ -34,21 +67,6 @@ body {
   flex-wrap: wrap;
 }
 
-.stew {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6rem;
-  /* padding: 10%; */
-  font-family: "Halant";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 24px;
-
-  color: #041330;
-}
 
 a {
   text-decoration: none;
@@ -66,26 +84,6 @@ a {
 
 .grey {
   width: 45%;
-}
-
-.hire {
-  border: 1px solid #155eef;
-  border-radius: 8px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  color: #155eef;
-  background-color: white;
-  cursor: pointer;
-  width: 94px;
-  /* height: 44px; */
-  padding: 10px 16px;
-}
-
-.hamburger {
-  display: none;
 }
 
 .guy {
@@ -134,7 +132,6 @@ a {
 .about {
   display: flex;
   margin: 3% 3%;
-
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -177,24 +174,22 @@ a {
 
 .foot {
   width: 100%;
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
- align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 1rem;
 }
 
 .grind {
   width: 100%;
 }
-.logos  {
+.logos {
   width: 90%;
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  
 }
-
 
 .reed {
   font-family: "Manrope";
@@ -204,8 +199,6 @@ a {
   line-height: 150%;
   letter-spacing: 0.5px;
   color: #041330;
-  /* float: right; */
-  /* padding-right: 0.5%; */
   width: 60%;
 }
 
@@ -217,7 +210,7 @@ a {
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 3%;
-  flex-wrap: wrap;
+  display: none;
 }
 
 .pro {
@@ -260,29 +253,41 @@ p {
   width: 50%;
   position: absolute;
   right: 10%;
-  top: 207%;
+  top: 225%;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .project {
     display: none;
   }
+
+  .boy {
+    width: 50%;
+    position: absolute;
+    right: 10%;
+    top: 345%;
+  }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 398px) {
   .flex-container {
     padding: 0px 16px;
+    width: 93.5%;
   }
   .hamburger {
     display: inline;
   }
 
-    .project {
+  .project {
     display: none;
-    }
+  }
 
   .stew {
     display: none;
+  }
+
+  .leg img {
+    width: 60%;
   }
 
   .container {
@@ -290,6 +295,7 @@ p {
     flex-direction: column;
     padding: 0px;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .container img {
@@ -307,6 +313,7 @@ p {
     font-size: 32px;
     padding-top: 0;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .you {
@@ -324,6 +331,7 @@ p {
     display: flex;
     flex-direction: column-reverse;
     padding: 32px 16px;
+    flex-wrap: wrap;
   }
 
   .bod {
@@ -333,7 +341,7 @@ p {
   .grey {
     width: 100%;
     align-items: center;
-    
+    flex-wrap: wrap;
   }
 
   .see {
@@ -346,35 +354,44 @@ p {
   }
 
   .link {
-    padding: 0px 0px 12px;
-    width: 95%;
+    padding: 0px 0px 16px 0px;
+    width: 94.5%;
   }
 
   .foot {
     width: 100%;
-    padding-left: .3%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 2.5rem;
     flex-wrap: wrap;
+    gap: 0rem;
+    padding-top: 2%;
   }
 
   .grind {
     width: 60%;
-    padding-left: 1%;
+    flex-wrap: wrap;
+  }
+  .grind img {
+    width: 70%;
   }
 
   .logos {
-     width: 30%; 
-     /* padding: 0px;  */
-     gap: 1rem;
+    width: 30%;
+    gap: 0.7rem;
+    padding-right: 2%;
+    flex-wrap: wrap;
   }
 
   .reed {
     align-items: center;
-  justify-content: center;
-    padding-top: 2%;
-    width: 80%;
+    justify-content: center;
+    padding-bottom: 0.5%;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4988210201263428px;
+    color: #041330;
   }
 }
