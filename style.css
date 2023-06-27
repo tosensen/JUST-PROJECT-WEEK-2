@@ -252,21 +252,42 @@ p {
   width: 50%;
   position: absolute;
   right: 10%;
-  top: 225%;
+  top: 215%;
+}
+
+.boy img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1440px) {
   .project {
-    display: none;
+    /* display: none; */
+  }
   }
 
+
+@media screen and (max-width: 1496px) {
+
+  .pro {
+  width: 50%;
+  position: relative;
+  gap: 24px;
+  background: #f9fbff;
+  z-index: 2;
+}
+
   .boy {
-    width: 50%;
+    width: 45%;
     position: absolute;
     right: 10%;
-    top: 298%;
+    top: 288%;
   }
-}
+
+    .boy img {
+      width: 100%;
+    }
+  }
+
 
 @media screen and (max-width: 399px) {
   .flex-container {
