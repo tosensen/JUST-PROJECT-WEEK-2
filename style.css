@@ -8,6 +8,7 @@
 body {
   font-family: "Halant", serif;
   font-family: "Manrope", sans-serif;
+  max-width: 1440px;
 }
 
 .flex-container {
@@ -259,34 +260,6 @@ p {
   width: 100%;
 }
 
-@media screen and (max-width: 1440px) {
-  .project {
-    /* display: none; */
-  }
-  }
-
-
-@media screen and (max-width: 1496px) {
-
-  .pro {
-  width: 50%;
-  position: relative;
-  gap: 24px;
-  background: #f9fbff;
-  z-index: 2;
-}
-
-  .boy {
-    width: 45%;
-    position: absolute;
-    right: 10%;
-    top: 288%;
-  }
-
-    .boy img {
-      width: 100%;
-    }
-  }
 
 
 @media screen and (max-width: 399px) {
