@@ -12,6 +12,8 @@ body {
   margin: 0 auto;
 }
 
+/* Flex Container */
+
 .flex-container {
   display: flex;
   align-items: center;
@@ -35,6 +37,11 @@ body {
   font-size: 24px;
   line-height: 24px;
   color: #041330;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hire {
@@ -57,6 +64,8 @@ body {
   display: none;
 }
 
+/* Container */
+
 .container {
   background-color: #f9fbff;
   display: flex;
@@ -69,21 +78,7 @@ body {
   flex-wrap: wrap;
 }
 
-a {
-  text-decoration: none;
-}
 .mine {
-  width: 45%;
-}
-.container > img {
-  width: 45%;
-}
-
-.bod {
-  width: 45%;
-}
-
-.grey {
   width: 45%;
 }
 
@@ -129,7 +124,15 @@ a {
   width: 30%;
   padding: 2% 2.5%;
   cursor: pointer;
+  border: none;
+  flex-wrap: wrap;
 }
+.container > img {
+  width: 45%;
+}
+
+/* About */
+
 .about {
   display: flex;
   margin: 3% 3%;
@@ -140,6 +143,23 @@ a {
   border: 2px solid #155eef;
   border-radius: 8px;
   flex-wrap: wrap;
+}
+
+.bod {
+  width: 45%;
+}
+
+.grey {
+  width: 45%;
+}
+
+.see {
+  font-family: "Halant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #041330;
 }
 
 .gone {
@@ -153,21 +173,84 @@ a {
   color: #2e3a53;
 }
 
-.see {
-  font-family: "Halant";
-  font-style: normal;
-  font-weight: 600;
+/* Projects */
+
+.project {
+  border: 2px solid #155eef;
+  border-radius: 8px;
+  margin: 3% 3%;
+  padding-bottom: 7%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 3%;
+}
+
+.pro {
+  position: relative;
+  display: flex;
+}
+
+.poj {
+  gap: 24px;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 2%;
+  width: 56%;
+  background: #f9fbff;
+  z-index: 2;
+}
+
+.poj > h2 {
+  font-family: Halant;
   font-size: 40px;
+  font-weight: 600;
   line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #041330;
 }
+
+.poj > ul {
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #2e3a53;
+  padding-left: 2.5rem;
+  padding-top: 2%;
+}
+
+.poj > p {
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #2e3a53;
+}
+
+.boy {
+  width: 55%;
+  position: absolute;
+  right: 1%;
+  top: 20%;
+}
+
+.boy img {
+  width: 100%;
+}
+
+/* Footer */
 
 .link {
   border: 2px solid #155eef;
   border-radius: 8px;
   margin: 3% 3%;
   align-items: center;
-  /* padding: 0%; */
   padding: 6px 14px;
   width: 94%;
   flex-wrap: wrap;
@@ -203,90 +286,26 @@ a {
   width: 60%;
 }
 
-.project {
-  border: 2px solid #155eef;
-  border-radius: 8px;
-  margin: 3% 3%;
-  padding-bottom: 7%;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-top: 3%;
-  
-}
-ul{
-  padding-left: 2.5rem;
-  padding-top: 2%;
-}
-.pro {
-  position: relative;
-  display: flex;
-}
-
-.poj {
-  gap: 24px;
-  padding-top: 3%;
-  padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 2%;
-  width: 56%;
-  background: #f9fbff;
-  z-index: 2;
-}
-
-h3 {
-  font-family: Halant;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #041330;
-}
-
-h5,
-li,
-p {
-  font-family: Manrope;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #2e3a53;
-}
-.boy {
-  width: 55%;
-  position: absolute;
-  right: 1%;
-  top: 22%;
-}
-
-.boy img {
-  width: 100%;
-}
-
-
-
 @media screen and (max-width: 399px) {
+  /* Flex container*/
+
   .flex-container {
     padding: 0px 16px;
     width: 93.5%;
   }
-  .hamburger {
-    display: inline;
-  }
 
-  .project {
-    display: none;
+  .leg img {
+    width: 45%;
   }
 
   .stew {
     display: none;
   }
-
-  .leg img {
-    width: 60%;
+  .hamburger {
+    display: inline;
   }
+
+  /* Container*/
 
   .container {
     display: flex;
@@ -296,8 +315,8 @@ p {
     flex-wrap: wrap;
   }
 
-  .container img {
-    width: 100%;
+  .mine {
+    width: 98%;
   }
 
   .guy {
@@ -318,13 +337,16 @@ p {
     font-size: 16px;
   }
 
-  .mine {
-    width: 98%;
-  }
-
   .but {
     width: 98%;
   }
+
+  .container img {
+    width: 100%;
+  }
+
+  /* About */
+
   .about {
     display: flex;
     flex-direction: column-reverse;
@@ -343,13 +365,79 @@ p {
   }
 
   .see {
-    font-size: 24px;
     text-align: center;
+    font-family: Halant;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #041330;
   }
 
   .gone {
     font-size: 16px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #2e3a53;
+    text-align: justify;
   }
+
+  /* Project */
+
+  .project {
+    background: #f9fbff;
+    gap: 16px;
+  }
+
+  .poj {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .poj > ul {
+    gap: 10px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #2e3a53;
+    padding-left: 1.5rem;
+    padding-top: 2%;
+  }
+
+  .poj > p {
+    gap: 10px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #2e3a53;
+  }
+
+  .poj > h2 {
+    padding-top: 4%;
+    font-family: Halant;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #041330;
+  }
+
+  .project .boy {
+    display: none;
+  }
+
+  /* Footer */
 
   .link {
     padding: 0px 0px 16px 0px;
@@ -370,6 +458,7 @@ p {
     width: 60%;
     flex-wrap: wrap;
   }
+
   .grind img {
     width: 70%;
   }
