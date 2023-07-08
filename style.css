@@ -22,7 +22,9 @@ body {
   border: 2px solid #155eef;
   border-radius: 8px;
   margin: 2% 3%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  position: relative;
+  z-index: 10;
 }
 
 .stew {
@@ -57,11 +59,39 @@ a {
   cursor: pointer;
   width: 94px;
   padding: 10px 16px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
-.hamburger {
+.burg {
   display: none;
+}
+.hamburger,
+.menu,
+.lines {
+  display: none;
+}
+
+.hamburger.hide {
+  display: none;
+}
+
+.lines {
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  height: 100vh;
+  padding-top: 20%;
+  background-color: #f9fbff;
+  width: 100%;
+  font-family: Halant;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #041330;
+  gap: 10%;
+  z-index: 5;
 }
 
 /* Container */
@@ -75,7 +105,7 @@ a {
   padding: 64px 32px;
   border: 2px solid #155eef;
   border-radius: 8px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .mine {
@@ -125,7 +155,7 @@ a {
   padding: 2% 2.5%;
   cursor: pointer;
   border: none;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .container > img {
   width: 45%;
@@ -142,7 +172,7 @@ a {
   padding: 64px 32px;
   border: 2px solid #155eef;
   border-radius: 8px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .bod {
@@ -253,7 +283,7 @@ a {
   align-items: center;
   padding: 6px 14px;
   width: 94%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .foot {
@@ -286,16 +316,41 @@ a {
   width: 60%;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 430px) {
   /* Flex container*/
 
   .flex-container {
     padding: 0px 16px;
     width: 93.5%;
+    background-color: #ffffff;
+    flex-wrap: wrap;
   }
 
-  .leg img {
-    width: 45%;
+  .flex-container.hide {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    z-index: 100;
+  }
+
+  .lines.visible {
+    display: flex;
+  }
+
+  .burg {
+    display: inline;
+  }
+
+  .menu {
+    display: inline;
+  }
+
+  .menu.inactive {
+    display: none;
+  }
+
+  .menu.hide {
+    display: none;
   }
 
   .stew {
@@ -305,7 +360,16 @@ a {
     display: inline;
   }
 
-  /* Container*/
+  .hamburger.inactive {
+    display: none;
+  }
+
+  .lines > p {
+    border-bottom: 0.5px solid #030e27;
+    padding: 8% 9%;
+  }
+
+  /* Container */
 
   .container {
     display: flex;
@@ -471,8 +535,6 @@ a {
   }
 
   .reed {
-    align-items: center;
-    justify-content: center;
     padding-bottom: 0.5%;
     font-family: Manrope;
     font-size: 16px;
@@ -480,5 +542,7 @@ a {
     line-height: 24px;
     letter-spacing: 0.4988210201263428px;
     color: #041330;
+    width: 100%;
+    text-align: center;
   }
 }
