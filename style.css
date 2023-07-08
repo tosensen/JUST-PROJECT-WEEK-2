@@ -323,7 +323,7 @@ a {
     padding: 0px 16px;
     width: 93.5%;
     background-color: #ffffff;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .flex-container.hide {
@@ -376,7 +376,7 @@ a {
     flex-direction: column;
     padding: 0px;
     text-align: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .mine {
@@ -415,7 +415,7 @@ a {
     display: flex;
     flex-direction: column-reverse;
     padding: 32px 16px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .bod {
