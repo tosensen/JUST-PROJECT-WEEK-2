@@ -25,6 +25,11 @@ body {
   /* flex-wrap: wrap; */
   position: relative;
   z-index: 10;
+  width: 94%;
+}
+
+.leg{
+  width: 45%;
 }
 
 .stew {
@@ -39,7 +44,8 @@ body {
   font-size: 24px;
   line-height: 24px;
   color: #041330;
-  flex-wrap: wrap;
+  width: 45%;
+  /* flex-wrap: wrap; */
 }
 
 a {
@@ -57,7 +63,7 @@ a {
   color: #155eef;
   background-color: white;
   cursor: pointer;
-  width: 94px;
+  /* width: 94px; */
   padding: 10px 16px;
   /* flex-wrap: wrap; */
 }
@@ -151,7 +157,7 @@ a {
   background: #155eef;
   border-radius: 8px;
   color: #ffffff;
-  width: 30%;
+  /* width: 30%; */
   padding: 2% 2.5%;
   cursor: pointer;
   border: none;
@@ -356,6 +362,7 @@ a {
   .stew {
     display: none;
   }
+
   .hamburger {
     display: inline;
   }
@@ -364,7 +371,7 @@ a {
     display: none;
   }
 
-  .lines > p {
+  .lines > a {
     border-bottom: 0.5px solid #030e27;
     padding: 8% 9%;
   }
@@ -546,3 +553,29 @@ a {
     text-align: center;
   }
 }
+/* @media screen and (min-width: 900px) {
+  /* Flex container*/
+
+  /* .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 94%;
+    padding: 1%;
+  }
+
+  .hamburger{
+    display: none;
+  }
+  .leg{
+  width: 30%;
+}
+.stew{
+  display: flex;
+  flex-direction: row;
+width: 50%;
+gap: 2%;
+/* justify-content: space-between; */
+}
+ */
+
